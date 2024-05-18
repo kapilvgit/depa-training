@@ -17,7 +17,7 @@ Build container images required for this sample as follows.
 
 ```bash
 cd scenarios/mnist
-./ci/build.sh
+./packaging/build.sh
 ```
 
 These scripts build the following containers. 
@@ -112,9 +112,9 @@ If you wish to use your own container images, login to docker hub and push conta
 ```bash
 export CONTAINER_REGISTRY=<docker-hub-registry-name>
 docker login 
-./ci/push-containers.sh
+./packaging/push-containers.sh
 cd scenarios/mnist
-./ci/push-containers.sh
+./packaging/push-containers.sh
 ```
 
 ### Create Resources

@@ -17,7 +17,7 @@ Build container images required for this sample as follows.
 
 ```bash
 cd scenarios/covid
-./ci/build.sh
+./packaging/build.sh
 
 ```
 
@@ -98,9 +98,9 @@ If you wish to use your own container images, login to docker hub and push conta
 ```bash
 export CONTAINER_REGISTRY=<docker-hub-registry-name>
 docker login 
-./ci/push-containers.sh
+./packaging/push-containers.sh
 cd scenarios/covid
-./ci/push-containers.sh
+./packaging/push-containers.sh
 ```
 
 ### Create Resources

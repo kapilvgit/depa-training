@@ -37,11 +37,11 @@ jobs:
             name: ccr-model-save
             context: ./scenarios/covid/src
             buildargs: |
-          - dockerfile: ./ci/Dockerfile.encfs
+          - dockerfile: ./packaging/Dockerfile.encfs
             name: depa-training-encfs
             context: ./
             buildargs: |
-          - dockerfile: ./ci/Dockerfile.train
+          - dockerfile: ./packaging/Dockerfile.train
             name: depa-training
             context: ./src
             buildargs: |

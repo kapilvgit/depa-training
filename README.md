@@ -32,7 +32,7 @@ git clone --recursive http://github.com/iSPIRT/depa-training
 To build your own CCR container images, use the following command from the root of the repository. 
 
 ```bash
-./ci/build.sh
+./packaging/build.sh
 ```
 
 This scripts build the following containers. 

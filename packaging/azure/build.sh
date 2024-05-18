@@ -6,7 +6,7 @@ python3 setup.py bdist_wheel
 popd
 
 # Build training container
-docker build -f ci/Dockerfile.train src -t depa-training:latest
+docker build -f packaging/azure/Dockerfile.train src -t depa-training:latest
 
 # Build encrypted filesystem sidecar
 pushd external/confidential-sidecar-containers
@@ -17,4 +17,4 @@ pushd external/contract-ledger/pyscitt
 python3 setup.py bdist_wheel
 popd
 
-docker build -f ci/Dockerfile.encfs . -t depa-training-encfs
+docker build -f packaging/azure/Dockerfile.encfs . -t depa-training-encfs
